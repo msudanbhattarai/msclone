@@ -1,22 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="navbar">
-        <div class="ham">
-            <div class="hamburger ml-6 mt-5">
-                <div class="line w-6 h-0.5 bg-black my-1"></div>
-                <div class="line w-6 h-0.5 bg-black my-1"></div>
-                <div class="line w-6 h-0.5 bg-black my-1"></div>
-            </div>
+  </head>
+  <body class="">
+    <div class="navbar flex justify-between items-center px-3 md:px-8 md:py-4">
+      <div class="ham flex items-center md:order-2">
+        <div class="hamburger inline-block p-4 md:hidden">
+          <div class="line w-6 h-0.5 bg-black my-1"></div>
+          <div class="line w-6 h-0.5 bg-black my-1"></div>
+          <div class="line w-6 h-0.5 bg-black my-1"></div>
         </div>
+        <div class="search md:hidden">
+          <img src="./image/search.png" width="16px" class="rotate-90" alt="" />
+        </div>
+      </div>
+      <div class="logo md:order-1 flex justify-center item-center">
+        <div><img src="./image/microsoft.png" width="130px" alt="" /></div>
+        <ul
+          class="hidden bg-slate-100 w-full vsm:absolute top-16 vsm:space-y-12 vsm:left-3 md:bg-white pl-2 pt-10 md:pt-0 md:space-y-0 md:static lg:static md:top-0 md:flex md:mx-4 md:space-x-2 md:text-sm font-light"
+        >
+          <li>Microsoft 365</li>
+          <li>Teams</li>
+          <li>Windows</li>
+          <li>Surface</li>
+          <li>xbox</li>
+          <li>Deals</li>
+          <li class="hidden md:block lg:hidden checked:bg-black">More</li>
+          <li class="hidden md:block lg:hidden rotate-90">></li>
+          <li class="md:hidden lg:block">Small business</li>
+          <li class="md:hidden lg:block">Support</li>
+        </ul>
+      </div>
+      <div class="flex cart items-center md:order-3 space-x-5">
+        <div class="searchicon hidden md:block lg:flex space-x-2 items-center">
+          <span class="hidden lg:block text-sm font-light">Search</span>
+          <img src="./image/search.png" width="20px" class="rotate-90" alt="" />
+        </div>
+        <div class="md:block lg:flex space-x-2 items-center">
+          <span class="hidden lg:block text-sm font-light">Cart</span
+          ><img src="./image/shopping-cart.png" width="20px" alt="" />
+        </div>
+        <div class="md:block lg:flex space-x-2 items-center">
+          <span class="hidden lg:block text-sm font-light">Sign in</span
+          ><img src="./image/login.png" width="36px" alt="" />
+        </div>
+      </div>
     </div>
- 
-</body>
+    <!-- mioddle  -->
+    <div class="slider flex flex-col-reverse md:relative">
+      <div
+        class="border lg:border-none px-12 pb-4 lg:absolute top-44 left-16 lg:w-2/4"
+      >
+        <h1 class="text-1xl font-bold pt-4 lg:text-4xl">Microsoft 365</h1>
+        <p class="pra text-sm pt-3 lg:text-lg">
+          Turn your ideas into reality, stay safer online and off, and focus on
+          what matters most with Microsoft 365 apps
+        </p>
+        <button class="bg-blue-700 text-white p-2 w-fit mt-3">
+          For 1 person
+        </button>
+        <span
+          ><a
+            href=""
+            class="text-blue-700 mx-4 hover:underline lg:text-black lg:font-bold"
+            >For up to 6 people ></a
+          ></span
+        >
+      </div>
+      <div
+        class="rigt  bg-[url('image/bcd.avif')] lg:bg-[url('abc.avif')] sm:bg-auto  sm:bg-no-repeat h-[600px] lg:bg-cover lg:bg-center"
+      >
+        <div class="">
+          <!-- <img src="image/Highlight-M365-Icon-Bounce-Word-Merch_VP4-1399x600.avif" alt="" class="b"> -->
+        </div>
+      </div>
+    </div>
+    <!-- down items with responsive with cols manage  -->
+    <div
+      class="promo grid grid-rows-1 vsm:grid-cols-2 msm:grid-cols-2 md:grid-cols-6 justify-items-center item-center mt-12"
+    >
+      <div
+        class="item vsm:col-span-full md:col-span-3 lg:col-span-1 flex flex-col items-center justify-between mx-4 md:mx-auto space-x-2"
+      >
+        <img src="./image/surface-go2-link-list-120x120.webp" alt="" />
+        <span
+          class="surface w-auto text-center text-sm my-4 text-blue-400 font-semibold underline"
+          >Shop surface devices</span
+        >
+      </div>
+      <!---->
+      <div
+        class="item vsm:col-span-full md:col-span-3 lg:col-span-1 flex flex-col items-center justify-between mx-4 space-x-2"
+      >
+        <img
+          src="./image/gldn-Quick-Link-Icon-80x80-Microsoft-365 (1).webp"
+          alt=""
+        />
+        <span
+          class="surface w-auto text-center text-sm my-4 text-blue-400 font-semibold underline"
+          >Choose your Microsoft 365</span
+        >
+      </div>
+      <!--  -->
+      <div
+        class="item vsm:col-span-full md:col-span-2 lg:col-span-1 flex flex-col items-center justify-between mx-4 space-x-2"
+      >
+        <img src="./image/xbox-blk-logo-link-list-120x120.webp" alt="" />
+        <span
+          class="surface w-auto text-center text-sm my-4 text-blue-400 font-semibold underline"
+          >Buy Xbox games and consoles</span
+        >
+      </div>
+      <!--  -->
+      <div
+        class="item md:col-span-2 lg:col-span-1 flex flex-col items-center justify-between mx-4 space-x-2"
+      >
+        <img
+          src="./image/gldn-Quick-Link-Icon-80x80-Microsoft-365.webp"
+          alt=""
+        />
+        <span
+          class="surface w-auto text-center text-sm my-4 text-blue-400 font-semibold underline"
+          >Get Windows 11</span
+        >
+      </div>
+      <!--  -->
+      <div
+        class="item md:col-span-2 lg:col-span-1 flex flex-col items-center justify-between mx-4 space-x-2"
+      >
+        <img src="./image/keyboard-mouse-link-list-120x120.webp" alt="" />
+        <span
+          class="surface w-auto text-center text-sm my-4 text-blue-400 font-semibold underline"
+          >Shop for accessories</span
+        >
+      </div>
+      <!--  -->
+      <div
+        class="item vsm:col-span-full md:col-span-full lg:col-span-1 flex flex-col items-center justify-between mx-4 space-x-2"
+      >
+        <img src="./image/gldn-ICON-LL-briefcase-120x120.webp" alt="" />
+        <span
+          class="surface w-auto text-center text-sm my-4 text-blue-400 font-semibold underline"
+          >Shop Business
+        </span>
+      </div>
+    </div>
+    <!-- middle section pages  -->
+    <div class="container mx-auto mt-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 lg:grid-cols-4">
+        <!-- div 1st -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image1.webp " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Up to $150 off select Surface Laptop Go 2
+            </h1>
+            <p class="para1">
+              Work and play anywhere with the perfect balance of style,
+              portability, and performance. Offer ends 6/11.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- div 2nd -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image2.webp " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Save up to $300 on Surface Laptop 5
+            </h1>
+            <p class="para1">
+              Sophisticated style and multitasking speed powered by 12th Gen
+              Intel® Core. Offer ends 6/18.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- div 3rd -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image3.avif " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Up to $150 off select Surface Laptop Go 2
+            </h1>
+            <p class="para1">
+              Work and play anywhere with the perfect balance of style,
+              portability, and performance. Offer ends 6/11.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- div 4th -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image4.avif " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Up to $150 off select Surface Laptop Go 2
+            </h1>
+            <p class="para1">
+              Work and play anywhere with the perfect balance of style,
+              portability, and performance. Offer ends 6/11.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- middle section end -->
+      <!-- start of 2nd last frame  -->
+      <div
+        class="flex flex-col md:flex-row relative   "
+      >
+        <!-- image -->
+        <div class="w-full h-[600px]">
+          <img src="./image/btn.avif" class="w-full  md:hidden" alt="" />
+          <img
+            src="./image/btn2.avif"
+            class="hidden md:flex w-full h-full object-cover" 
+            alt=""
+          />
+        </div>
+        <!-- box portion -->
+        <div
+          class="md:flex md:flex-col md:py-16 md:gap-2 mx-3 md:absolute md:px-9 bg-white md:w-96 md:h-[500px] top-8 left-14"
+        >
+          <div>
+            <h2
+              class="font-bold text-xl md:text-3xl md:font-medium my-5 mt-10 w-full"
+            >
+              Announcing the next wave of AI innovation
+            </h2>
+          </div>
+          <p>
+            The new Microsoft Bing and Edge will soon feature more visual search
+            responses, chat history,and persistent chat within Edge. we`re also
+            adding actions to help people complete tasks.
+          </p>
+          <button class="bg-blue-600 w-fit mt-3 p-3 rounded text-white">
+            Learn more about it
+          </button>
+        </div>
+      </div>
+      <!-- container end  -->
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 lg:grid-cols-4 mt-5">
+        <!-- div 1st -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image1.webp " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Up to $150 off select Surface Laptop Go 2
+            </h1>
+            <p class="para1">
+              Work and play anywhere with the perfect balance of style,
+              portability, and performance. Offer ends 6/11.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- div 2nd -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image2.webp " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Save up to $300 on Surface Laptop 5
+            </h1>
+            <p class="para1">
+              Sophisticated style and multitasking speed powered by 12th Gen
+              Intel® Core. Offer ends 6/18.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- div 3rd -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image3.avif " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Up to $150 off select Surface Laptop Go 2
+            </h1>
+            <p class="para1">
+              Work and play anywhere with the perfect balance of style,
+              portability, and performance. Offer ends 6/11.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- div 4th -->
+        <div>
+          <div class="image1 justify-center">
+            <img src="image/image4.avif " alt="" class="image1 w-full" />
+            <h1 class="surface font-bold text-xl my-3">
+              Up to $150 off select Surface Laptop Go 2
+            </h1>
+            <p class="para1">
+              Work and play anywhere with the perfect balance of style,
+              portability, and performance. Offer ends 6/11.
+            </p>
+            <button class="my-3">
+              <a href="#" class="text-blue-500 hover:underline"
+                >Shop Surface Laptop Go 2 ></a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- middle section end -->
+    
+    </div>
+  </body>
 </html>
